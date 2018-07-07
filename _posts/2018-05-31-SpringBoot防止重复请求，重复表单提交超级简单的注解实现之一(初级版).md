@@ -31,8 +31,9 @@ public @interface DuplicateSubmitToken {
 
 }
 ```
+
 2. 拦截器
- 
+
 ```
 /**
  * @description 防止表单重复提交拦截器
@@ -103,9 +104,10 @@ public class DuplicateSubmitAspect {
     }
 }
 ```
+
 3. 控制器 
 在你要使用的控制器要防止重复提交的方法添加注解@DuplicateSubmitToken即可
- 
+
 ```
 @RestController
 public class TestController {
@@ -126,7 +128,10 @@ public class TestController {
     }
 }
 ```
+
 4. 测试
- <img src="{{ site.assets }}/images/2018-05-31/2018053111194299.png"/>
+
+<img src="{{ site.assets }}/images/2018-05-31/2018053111194299.png"/>
+
 
 5.总结：初步实现了防止重复提交的功能，但是这只是考虑到了正常的逻辑，异常情况是怎么样的呢？异常情况会出现重复标记无法移除，从而影响后面的请求，如何是好呢？请看下一个版本！
