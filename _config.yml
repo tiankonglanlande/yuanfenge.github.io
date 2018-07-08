@@ -25,7 +25,7 @@ redcarpet:
     
 
 title : LuQiumMing
-tagline: A fresh looking and responsive theme for LuQiumMing
+tagline: 天空蓝蓝的欢迎您，你可以什么都不留下，但是请带走你需要的知识！
 
 defaults:
   -
@@ -87,10 +87,10 @@ author:
  ## tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
  ## douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
  ## zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
-  email:      ## e.g. qiutiandeyanse@gmail.com
+  email: 920800779@qq.com     ## e.g. qiutiandeyanse@gmail.com
  ## twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:     ## e.g. tiankonglanlande for https://github.com/tiankonglanlande
-  csdn:     ## e.g. tiankonglanlande for http://blog.csdn.net/u013042707
+  github: https://github.com/tiankonglanlande   ## e.g. tiankonglanlande for https://github.com/tiankonglanlande
+  csdn: http://blog.csdn.net/u013042707       ## e.g. tiankonglanlande for http://blog.csdn.net/u013042707
  ## facebook:   ## e.g. imjark for https://facebook.com/imjark
  ## linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
  ##google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
