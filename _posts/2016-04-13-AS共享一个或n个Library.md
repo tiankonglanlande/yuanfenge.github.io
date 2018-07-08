@@ -68,3 +68,6 @@ Androidstadi多个project项目共享n个Library
           compile project(':MySharedLibrary/lib_A ')
           compile project(':MySharedLibrary/lib_B ')
           compile project(':MySharedLibrary/lib_C ')
+
+作者：@天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
+版权所有，欢迎保留原文链接进行转载：)
