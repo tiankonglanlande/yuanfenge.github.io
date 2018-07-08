@@ -14,9 +14,13 @@ description:   使用logstash从 mysql 全量同步数据到elasticsearch
 
 #### 1.安装elasticsearch,
 ##### 1.1、下载并安装ES的yum公钥 #####
+ ```
 rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch
+ ```
 ##### 1.2、配置ES的yum源 #####
+ ```
 vim /etc/yum.repos.d/elasticsearch.repo
+ ```
  输入下面的内容：
  ```
 [elasticsearch-6.x]
