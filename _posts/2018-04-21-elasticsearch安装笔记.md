@@ -7,7 +7,7 @@ tags:
 categories: elasticsearch
 description:  自己安装elasticsearch的实践过程
 ---
-## elasticsearch安装笔记 ##
+#### elasticsearch安装笔记 ####
 前言：自己安装elasticsearch的实践过程
 <!-- more -->
 
