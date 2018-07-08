@@ -7,7 +7,6 @@ tags:
 categories: android
 description:  刚从eclipse向androidstudio转项目有点多，公用的library也多，要是每个项目都导入library想起来都害怕于是想： androidstudio能不能不同的project共享library？
 ---
-#### 多项目共享Library ####
 前言：刚从eclipse向androidstudio转项目有点多，公用的library也多，要是每个项目都导入library想起来都害怕于是想： androidstudio能不能不同的project共享library？
 在网上也有不少这样的解决方案但是我怎么也不能够成功，于是继续人肉搜索
 最后在stackoverflow一个老外的回答

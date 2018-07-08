@@ -9,7 +9,7 @@ tags:
 categories: idea
 description:  idea 项目的target目录不见了，真是奇怪！
 ---
-####  问题：idea 项目的target目录不见了，但是show in explorer可以找到，很不方便。 ####
+idea 项目的target目录不见了，但是show in explorer可以找到，很不方便。
 <!-- more -->
 
 ##### 1.问题： #####
