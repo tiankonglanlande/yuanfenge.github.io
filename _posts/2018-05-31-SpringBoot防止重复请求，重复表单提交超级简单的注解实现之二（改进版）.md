@@ -155,5 +155,5 @@ public class TestController {
 #### 4.总结：####
 功能异常情况就处理了，但是总觉得这也太不智能了。而且麻烦，总觉得绕圈子了，能不能一出现异常就减标记移除呢？请看下一篇
 
-作者：@天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
+作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
 版权所有，欢迎保留原文链接进行转载：)

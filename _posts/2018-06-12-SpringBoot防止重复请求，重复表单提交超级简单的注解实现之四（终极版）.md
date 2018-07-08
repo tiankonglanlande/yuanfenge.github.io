@@ -169,5 +169,5 @@ public class TestController {
 #### 4.做了这些可能还是会遇到数据重复插入问题 ####
 我们可以根据给创建唯一索引给某个字段，防止数据不重复插入，或者给方法加锁（同步）
 
-作者：@天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
+作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
 版权所有，欢迎保留原文链接进行转载：)

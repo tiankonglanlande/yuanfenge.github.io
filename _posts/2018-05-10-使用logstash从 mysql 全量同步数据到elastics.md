@@ -115,7 +115,7 @@ output {
 ./logstash -f config-mysql --path.data=/root/
 ```
 
-作者：@天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
+作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
 版权所有，欢迎保留原文链接进行转载：)
 
 

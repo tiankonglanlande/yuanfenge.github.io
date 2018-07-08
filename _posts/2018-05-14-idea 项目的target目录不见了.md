@@ -16,5 +16,5 @@ description:  idea 项目的target目录不见了，真是奇怪！
 #### 解决方法：File-->Settings-->Editor-->File Types-->右边Ignore files and folders找到target文件名去掉即可 ####
 #### 4.做了这些可能还是会遇到数据重复插入问题 ####
 
-作者：@天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
+作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
 版权所有，欢迎保留原文链接进行转载：)

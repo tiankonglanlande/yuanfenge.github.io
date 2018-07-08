@@ -38,5 +38,5 @@ network.publish_host: 120.78.91.62   #此处填写你的外网ip即可
 ## 3.	vim 修改文件出现错误“E45: 'readonly' option is set (add ! to override) ##
 如果是root权限，可以使用:wq! 强行保存退出
 
-作者：@天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
+作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
 版权所有，欢迎保留原文链接进行转载：)

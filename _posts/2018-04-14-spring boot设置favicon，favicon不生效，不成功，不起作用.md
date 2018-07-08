@@ -35,5 +35,5 @@ springboot显示的是一片叶子，我们如何使用自己的favicon呢？
 </head> 
 ```
 
-作者：@天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
+作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
 版权所有，欢迎保留原文链接进行转载：)
