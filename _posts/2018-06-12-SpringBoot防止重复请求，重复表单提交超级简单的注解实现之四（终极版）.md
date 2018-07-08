@@ -16,7 +16,7 @@ description:  spring-boot
 
 在上一篇的基础上DuplicateAspect不移除标记为SESSION的token就可以了！
 
-#### 1.DuplicateSubmitToken.java添加属性type，默认为一次请求完成之前防止重复提交 ####
+#### DuplicateSubmitToken.java添加属性type，默认为一次请求完成之前防止重复提交 ####
 ```
 /**
  * @description 防止表单重复提交注解
@@ -38,7 +38,7 @@ public @interface DuplicateSubmitToken {
 }
 ```
 
-#### 2.DuplicateSubmitAspect.java方法doAfterReturing判断如果REQUEST才移除防止重复提交，因为SESSION标记在会话结束 时或失效时会自动移除标记 ####
+#### DuplicateSubmitAspect.java方法doAfterReturing判断如果REQUEST才移除防止重复提交，因为SESSION标记在会话结束 时或失效时会自动移除标记 ####
 ```
 /**
  * @description 防止表单重复提交拦截器
@@ -134,7 +134,7 @@ public class DuplicateSubmitAspect {
     }
 }
 ```
-#### 3.使用标记为会话防止重复提交 #### 
+#### 使用标记为会话防止重复提交 #### 
 ```
 /**
  * @description
@@ -166,7 +166,7 @@ public class TestController {
 
 }
 ```
-#### 4.做了这些可能还是会遇到数据重复插入问题 ####
+#### 做了这些可能还是会遇到数据重复插入问题 ####
 我们可以根据给创建唯一索引给某个字段，防止数据不重复插入，或者给方法加锁（同步）
 
 作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
