@@ -13,7 +13,7 @@ description:  spring-boot
 <!-- more -->
 
 
-####  注解接口 ####
+#### 1. 注解接口 ####
  
 ```
 /**
@@ -32,7 +32,7 @@ public @interface DuplicateSubmitToken {
 }
 ```
 
-####  拦截器 ####
+#### 2. 拦截器 ####
 ```
 /**
  * @description 防止表单重复提交拦截器
@@ -120,7 +120,7 @@ public class DuplicateSubmitAspect {
 }
 ```
 
-####  控制器 ####
+#### 3. 控制器 ####
 ```
 /**
  * @description
@@ -152,7 +152,7 @@ public class TestController {
 }
 ```
 
-#### 总结：####
+#### 4.总结：####
 功能异常情况就处理了，但是总觉得这也太不智能了。而且麻烦，总觉得绕圈子了，能不能一出现异常就减标记移除呢？请看下一篇
 
 作者：天空蓝蓝的  www.lskyf.com  www.lskyf.xyz 
