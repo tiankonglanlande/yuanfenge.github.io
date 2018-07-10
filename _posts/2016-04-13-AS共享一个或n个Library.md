@@ -68,5 +68,7 @@ Androidstadi多个project项目共享n个Library
           compile project(':MySharedLibrary/lib_B ')
           compile project(':MySharedLibrary/lib_C ')
 
-作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
-版权所有，欢迎保留原文链接进行转载：)
+###### 作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> ######
+###### 网址导航：<a href="http://www.lskyf.com" target="_blank">http://www.lskyf.com</a> ######
+###### 个人博客：<a href="http://www.lskyf.xyz" target="_blank">http://www.lskyf.xyz</a> ######
+###### 版权所有，欢迎保留原文链接进行转载：) ######

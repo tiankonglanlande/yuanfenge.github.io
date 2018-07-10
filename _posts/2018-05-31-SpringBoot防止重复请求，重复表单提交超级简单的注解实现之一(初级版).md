@@ -138,5 +138,9 @@ public class TestController {
 
 初步实现了防止重复提交的功能，但是这只是考虑到了正常的逻辑，异常情况是怎么样的呢？异常情况会出现重复标记无法移除，从而影响后面的请求，如何是好呢？请看下一个版本！
 
-作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
-版权所有，欢迎保留原文链接进行转载：)
+
+
+###### 作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> ######
+###### 网址导航：<a href="http://www.lskyf.com" target="_blank">http://www.lskyf.com</a> ######
+###### 个人博客：<a href="http://www.lskyf.xyz" target="_blank">http://www.lskyf.xyz</a> ######
+###### 版权所有，欢迎保留原文链接进行转载：) ######

@@ -120,5 +120,9 @@ public class DuplicateSubmitAspect {
 ####  3.使用：在你要使用的控制器要防止重复提交的方法添加注解@DuplicateSubmitToken即可 ####
 ####  4.总结：有时候我们在思考问题的时候可以换一种思路，多考虑下是否还有其他方式。#### 
 
-作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
-版权所有，欢迎保留原文链接进行转载：)
+
+
+###### 作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> ######
+###### 网址导航：<a href="http://www.lskyf.com" target="_blank">http://www.lskyf.com</a> ######
+###### 个人博客：<a href="http://www.lskyf.xyz" target="_blank">http://www.lskyf.xyz</a> ######
+###### 版权所有，欢迎保留原文链接进行转载：) ######
