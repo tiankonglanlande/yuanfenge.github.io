@@ -58,5 +58,5 @@ curl -u my_admin -XPUT 'http://localhost:9200/_xpack/security/user/elastic/_pass
 curl -u elastic 'http://localhost:9200/_xpack/security/_authenticate?pretty'
 ```
 
-作者：天空蓝蓝的  www.lskyf.com   www.lskyf.xyz  
+作者：天空蓝蓝的  网址导航：[www.lskyf.com](www.lskyf.com){:target="_blank"}   个人博客：[www.lskyf.xyz ](www.lskyf.xyz ){:target="_blank"} 
 版权所有，欢迎保留原文链接进行转载：)
