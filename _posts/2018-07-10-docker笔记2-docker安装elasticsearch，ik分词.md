@@ -59,6 +59,6 @@ curl -u elastic 'http://localhost:9200/_xpack/security/_authenticate?pretty'
 ```
 
 作者：天空蓝蓝的   
-网址导航：[http://www.lskyf.com](http://www.lskyf.com){:target="_blank"} 
-个人博客：[http://www.lskyf.xyz](http://www.lskyf.xyz){:target="_blank"} 
+网址导航：[http://www.lskyf.com](http://www.lskyf.com){:target="_blank"}    
+个人博客：[http://www.lskyf.xyz](http://www.lskyf.xyz){:target="_blank"}    
 版权所有，欢迎保留原文链接进行转载：)
