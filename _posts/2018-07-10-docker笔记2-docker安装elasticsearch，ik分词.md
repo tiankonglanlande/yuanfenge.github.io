@@ -11,7 +11,7 @@ tags:
 categories: docker  Dockerfile  elasticsearch 
 description:  docker笔记2-docker安装elasticsearch，ik分词
 ---
-docker笔记记录，使用的时候查一查。
+docker笔记记录，记录docker安装自定义elasticsearch，包含Dockerfile,ik分词安装。
 <!-- more -->
 
 #### 1.编写elasticsearch.yml #### 
