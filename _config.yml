@@ -12,7 +12,7 @@ baseurl:
 paginate: 20
 
 # Markdown Processors
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions:
     - hard_wrap
@@ -106,8 +106,8 @@ toc:
 
 #### Links
 links:
-  天空蓝蓝的csdn:http://blog.csdn.net/u013042707
- 
+  Yuanzi Notebook(园子的测试笔记--我的测试工程师同事): https://xunbug.com/
+  
 
 
 
