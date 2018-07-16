@@ -114,6 +114,8 @@ output {
 ```
 ./logstash -f config-mysql --path.data=/root/
 ```
+<br/>
+<br/>
 
 ###### 作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> ######
 ###### 网址导航：<a href="http://www.lskyf.com" target="_blank">http://www.lskyf.com</a> ######
