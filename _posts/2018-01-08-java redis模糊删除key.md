@@ -12,7 +12,7 @@ description:  java redis模糊删除key
 ---
 两个java redis模糊删除key实例
 <!-- more -->
-    注释比较清楚直接看代码
+注释比较清楚直接看代码
 ```
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -42,14 +42,14 @@ public class RedisTest {
     }
 }
 ```
-    注意：删除的前缀应该是就近一级  eg:  key=test:aa:bb:12345 那么他的前缀应该是test:aa:bb:*        这样才能删除
+注意：删除的前缀应该是就近一级  eg:  key=test:aa:bb:12345 那么他的前缀应该是test:aa:bb:*        这样才能删除
 
 
 ##### 续集 #####
 
-    1.思路：使用模糊获取相关的key，然后根据key做更新删除操作
+1.思路：使用模糊获取相关的key，然后根据key做更新删除操作
 
-    2.伪代码
+2.伪代码
 ```
 String keys="test:group:user*";
 Set<String> keysList = stringRedisTemplate.keys(keys);
@@ -60,7 +60,7 @@ keysList.forEach(i->{
     LogUtils.info("---------->"+value+"\n");
 });
 ```
-    3.拿到key了，删除更新都就迎刃而解了
+3.拿到key了，删除更新都就迎刃而解了
 
 
 
