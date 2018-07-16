@@ -37,7 +37,7 @@ springboot显示的是一片叶子，我们如何使用自己的favicon呢？
 <br/>
 <br/>
 
-###### 作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> ######
-###### 网址导航：<a href="http://www.lskyf.com" target="_blank">http://www.lskyf.com</a> ######
-###### 个人博客：<a href="http://www.lskyf.xyz" target="_blank">http://www.lskyf.xyz</a> ######
-###### 版权所有，欢迎保留原文链接进行转载：) ######
+作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> <br>
+网址导航：<a href="http://www.lskyf.com" target="_blank">http://www.lskyf.com</a> <br>
+个人博客：<a href="http://www.lskyf.xyz" target="_blank">http://www.lskyf.xyz</a> <br>
+版权所有，欢迎保留原文链接进行转载：) <br>
