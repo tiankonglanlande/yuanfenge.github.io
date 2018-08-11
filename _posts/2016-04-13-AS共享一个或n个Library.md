@@ -4,9 +4,10 @@ title: AS共享一个或n个Library
 tags:
 - Android Studio
 - 多项目共享Library
-categories: Android
+categories: android
 description:  刚从eclipse向androidstudio转项目有点多，公用的library也多，要是每个项目都导入library想起来都害怕于是想： androidstudio能不能不同的project共享library？
 ---
+## 多项目共享Library
 前言：刚从eclipse向androidstudio转项目有点多，公用的library也多，要是每个项目都导入library想起来都害怕于是想： androidstudio能不能不同的project共享library？
 在网上也有不少这样的解决方案但是我怎么也不能够成功，于是继续人肉搜索
 最后在stackoverflow一个老外的回答
@@ -18,11 +19,11 @@ Error:Configuration with name 'default' not found in Android Studio
 
 例一：成立条件MySharedLibrary'要使用llib_A的useProject在同级目录
 
-         1.新建一个MySharedLibrary'
+    1.新建一个MySharedLibrary'
 
-         2. MySharedLibrary'中到如导入你已有的library< lib_A >（或者新建library< lib_A >）
+    2. MySharedLibrary'中到如导入你已有的library< lib_A >（或者新建library< lib_A >）
 
-         3.修改library  build.gradle加入
+    3.修改library  build.gradle加入
 
           dependencies {
              compile fileTree(dir:'libs', include: ['*.jar'])
@@ -32,7 +33,7 @@ Error:Configuration with name 'default' not found in Android Studio
 
           include 'app', ':MySharedLibrary'
           project(':MySharedLibrary').projectDir = new File('../MySharedLibrary/lib_A)
-     5.在使用的useProject的module中的build.gradle的dependencies加入以下代码
+    5.在使用的useProject的module中的build.gradle的dependencies加入以下代码
 
           compile project(':MySharedLibrary')
 
@@ -67,10 +68,3 @@ Androidstadi多个project项目共享n个Library
           compile project(':MySharedLibrary/lib_A ')
           compile project(':MySharedLibrary/lib_B ')
           compile project(':MySharedLibrary/lib_C ')
-<br/>
-<br/>
-
-作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> <br>
-网址导航：<a href="http://www.lskyf.com" target="_blank">http://www.lskyf.com</a> <br>
-个人博客：<a href="http://www.lskyf.xyz" target="_blank">http://www.lskyf.xyz</a> <br>
-版权所有，欢迎保留原文链接进行转载：) <br>
