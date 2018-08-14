@@ -24,7 +24,20 @@ docker ps -a
 ```
 docker ps -l
 ```
-
+###### 查看本地主机上的镜像镜像 ######
+```
+docker images
+```
+###### 从dockerhub中搜索镜像 ######
+```
+docker search redis
+```
+###### 拉取镜像 ######
+冒号后面指定镜像版本号，不指定则拉取最新的镜像版本
+```
+docker pull mysql:5.7.22
+docker pull mysql
+```
 ###### 停止、启动、杀死一个容器 ###### 
 ```
 docker stop Name/ID 
