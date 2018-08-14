@@ -57,6 +57,7 @@ docker rmi Name:1.0
 ```
 ###### docker build镜像 ###### 
 ```
+//docker build –tag=镜像名称 .  注意前面的点别丢
 docker build –tag=elastic-custom .
 ```
 ###### 启动elasticsearch ###### 
