@@ -61,7 +61,7 @@ description:  SpringBoot系列1-helloword
 http://localhost:8080/say/helloword
 可以看到浏览器得到返回结果【helloword】
 
-###### 源码地址：######
+###### 源码地址：
 <a href="https://github.com/tiankonglanlande/springboot" target="_blank">https://github.com/tiankonglanlande/springboot</a> <br>
 
 作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> <br>
