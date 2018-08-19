@@ -11,7 +11,10 @@ description:  SpringBoot系列1-helloword
 使用springboot简单轻松创建helloword
 <!-- more -->
 	SpringBoot系列1-helloword
-
+## 关于springboot ##
+这是摘自官方的一段话
+Spring Boot is designed to get you up and running as quickly as possible, with minimal upfront configuration of Spring applications.
+意思是说Spring Boot的设计是以最小的可伸缩的配置让你的应用程序尽可能快地运行，
 ##	为什么要使用springboot呢？ ##
 ### 影响力大：sping团队的力作，Spring Boot致力于在蓬勃发展的快速应用开发领域成为领导者 ###
 ### 简单：使编码，配置，部署，监控变简单 ###
