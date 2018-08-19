@@ -8,22 +8,22 @@ tags:
 categories: spring-boot
 description:  SpringBoot系列1-helloword
 ---
-使用springboot简单轻松创建helloword
+    使用springboot简单轻松创建helloword
 <!-- more -->
 	SpringBoot系列1-helloword
 	
-##### 关于springboot ##### 
+#### 关于springboot #####
 这是摘自官方的一段话
     Spring Boot is designed to get you up and running as quickly as possible, with minimal upfront configuration of Spring applications.
 意思是说Spring Boot的设计是以最小的可伸缩的配置让你的应用程序尽可能快地运行，
-##### 	为什么要使用springboot呢？ ##### 
+#### 	为什么要使用springboot呢？ ####
 影响力大：sping团队的力作，Spring Boot致力于在蓬勃发展的快速应用开发领域成为领导者 <br>
 简单：使编码，配置，部署，监控变简单 <br>
 快速：能够简单快速构建好一个项目而不使用太复杂的配置 <br>
 自动化：根据你的配置自动导入相关依赖 <br>
 
 
-##### 实现一个简单的helloword  #####
+####实现一个简单的helloword  ####
 
 环境：jdk1.8，maven3.1+（非必须）<br>
 开发工具：IDE(Eclipse、IntelliJ 或者其它的)<br>
