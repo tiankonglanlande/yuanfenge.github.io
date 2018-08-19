@@ -8,7 +8,7 @@ tags:
 categories: spring-boot
 description:  SpringBoot系列1-helloword
 ---
-    使用springboot简单轻松创建helloword
+使用springboot简单轻松创建helloword
 <!-- more -->
 	SpringBoot系列1-helloword
 	
