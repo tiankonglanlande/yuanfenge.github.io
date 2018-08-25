@@ -8,9 +8,8 @@ tags:
 categories: spring-boot
 description:  SpringBoot系列2-全局统一异常处理
 ---
- springboot做全局统一异常处理
+ SpringBoot做全局统一异常处理
 <!-- more -->
-SpringBoot系列2-全局统一异常处理
 
 ###	为什么要全局统一异常处理呢？ ###
 如果系统发生了异常，不做统一异常处理，前端会给用户展示一大片看不懂的文字。做统一异常处理后当异常发生后可以给用户一个温馨的提示，不至于使用户满头雾水，所以一方面是为了更好的用户体验
