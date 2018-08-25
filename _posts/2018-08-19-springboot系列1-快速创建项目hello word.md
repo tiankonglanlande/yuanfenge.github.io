@@ -10,7 +10,7 @@ description:  SpringBoot系列1-helloword
 ---
 使用springboot简单轻松创建helloword
 <!-- more -->
-	SpringBoot系列1-helloword
+SpringBoot系列1-helloword
 	
 #### 关于springboot #####
 这是摘自官方的一段话
