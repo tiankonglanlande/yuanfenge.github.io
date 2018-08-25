@@ -10,8 +10,7 @@ description:  SpringBoot系列2-全局统一异常处理
 ---
  springboot做全局统一异常处理
 <!-- more -->
-	
-	SpringBoot系列2-全局统一异常处理
+SpringBoot系列2-全局统一异常处理
 
 ###	为什么要全局统一异常处理呢？ ###
 如果系统发生了异常，不做统一异常处理，前端会给用户展示一大片看不懂的文字。做统一异常处理后当异常发生后可以给用户一个温馨的提示，不至于使用户满头雾水，所以一方面是为了更好的用户体验
@@ -20,7 +19,8 @@ description:  SpringBoot系列2-全局统一异常处理
 ###	SpringBoot如何实现全局统一异常处理呢？ ###
 
 项目目录结构
- <img src="{{ site.assets }}/images/2018-08-25/20180825132413.png"/>
+ 
+<img src="{{ site.assets }}/images/2018-08-25/20180825132413.png"/>
 
 ### 自定义异常类 ###
 pom.xml加入lombok
@@ -147,7 +147,7 @@ public class ExceptionController {
  可以看到浏览器返回对应的json字符串
   <img src="{{ site.assets }}/images/2018-08-25/20180825132412.png"/>
 
-### 源码地址：###
+### 源码地址：
 <a href="https://github.com/tiankonglanlande/springboot" target="_blank">https://github.com/tiankonglanlande/springboot</a> <br>
 
 作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> <br>
