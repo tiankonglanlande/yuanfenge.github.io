@@ -14,12 +14,14 @@ description:  docker笔记4-Dockerfile详解
 
 #### FROM 
 指定基础镜像
+<br/>
 eg：
 FROM java
 
 
 #### MAINTAINER(已过时)
 指定镜像的创建者
+<br/>
 eg:
 MAINTAINER nihao@sina.com
 
@@ -35,6 +37,7 @@ RUN ["executable","param1","param2"]
 CMD [“executable”, “param1”, “param2”] 使用 exec 执行，推荐方式。
 CMD command param1 param2 在 /bin/sh 中执行，提供给需要交互的应用。
 CMD [“param1”, “param2”] 提供给 ENTRYPOINT 的默认参数。
+<br/>
 eg:
 CMD ["java","-jar","app.jar"]
 
@@ -47,6 +50,7 @@ ADD target/*.jar /app.jar
 
 #### COPY
 复制本地主机的 (为 Dockerfile 所在目录的相对路径，文件或目录) 为容器中的 。目标路径不存在时，会自动创建。当使用本地目录为源目录时，推荐使用 COPY。
+<br/>
 eg:
 COPY target/*.jar /app.jar
 
@@ -54,7 +58,8 @@ COPY target/*.jar /app.jar
 两种方式
 ENTRYPOINT [“executable”, “param1”, “param2”]
 ENTRYPOINT command param1 param2 (shell 中执行)
-1.配置容器启动后执行的命令，并且不可被 docker run 提供的参数覆盖。 
+<br/>
+1.配置容器启动后执行的命令，并且不可被 docker run 提供的参数覆盖。 <br/>
 2.每个Dockerfile中只能有一个ENTRYPOINT，当指定多个时，只有最后一个生效
 
 
@@ -66,15 +71,17 @@ EXPOSE 8080
 #### ENV
 构建指令,在image中设置一个环境变量
 设置了后,后续的RUN命令都可以使用,container启动后,可以通过docker inspect查看这个环境变量,也可以通过在docker run –env key=value时设置或修改环境变量
+<br/>
 eg:
-安装的JAVA程序,设置环境变量
-ENV JAVA_HOME /data/programs/jdk
-ENV PATH $PATH:$JAVA_HOME/bin
-ENV CLASSPATH .:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+安装的JAVA程序,设置环境变量  <br/>
+ENV JAVA_HOME /data/programs/jdk <br/>
+ENV PATH $PATH:$JAVA_HOME/bin <br/>
+ENV CLASSPATH .:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar 
 
 
 #### VOLUME
 创建一个可以从本地或其他容器挂载的挂载点，一般用来存放数据库和需要保存的数据等
+<br/>
 eg:
 VALUME["/data"]
 VOLUME ["/data1","/data2"]
@@ -89,6 +96,7 @@ USER daemon
 
 #### WORKDIR
 切换工作目录
+<br/>
 eg：
 WORKDIR /a/b/c
 
@@ -98,6 +106,7 @@ WORKDIR /a/b/c
 格式
 LABEL key=value
 LABEL 指令为镜像添加标签。一个 LABEL 就是一个键值对。
+<br/>
 eg:
 LABEL version="1.0"
 LABEL content="描述"
