@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 2018-09-15-SpringBoot系列3-四步完成观察者事件发布接收（发送消息接收消息）使用异步方不阻塞主线程
+title: SpringBoot系列3-四步完成观察者事件发布接收（发送消息接收消息）使用异步方不阻塞主线程
 tags:
 - spring-boot
 
 
 categories: spring-boot
-description:  2018-09-15-SpringBoot系列3-四步完成观察者事件发布接收（发送消息接收消息）使用异步方不阻塞主线程
+description:  SpringBoot系列3-四步完成观察者事件发布接收（发送消息接收消息）使用异步方不阻塞主线程
 ---
- 2018-09-15-SpringBoot系列3-四步完成观察者事件发布接收（发送消息接收消息）使用异步方不阻塞主线程
+ SpringBoot系列3-四步完成观察者事件发布接收（发送消息接收消息）使用异步方不阻塞主线程
 <!-- more -->
 
 #### 首先Application开启异步
