@@ -67,9 +67,7 @@ public class Start {
 ```
 [源码下载链接](https://github.com/tiankonglanlande/springboot)
 
-如果大家使用的是springmvc可以参考我的另一篇文章
-定时删除项目upload目录下的所有不需要的文件以及目录（保留upload目录）
-https://blog.csdn.net/u013042707/article/details/76034072
+
 版权所有，欢迎保留原文链接进行转载：)
 关注我们的公众号了解更多<br>
 <img src="{{ site.assets }}/images/gongzonghao/天空唯美.jpg"/>
