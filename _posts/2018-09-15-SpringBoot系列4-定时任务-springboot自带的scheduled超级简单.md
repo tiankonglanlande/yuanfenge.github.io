@@ -11,9 +11,9 @@ description:  SpringBoot系列4-定时任务-springboot自带的scheduled超级�
  SpringBoot系列4-定时任务-springboot自带的scheduled超级简单
 <!-- more -->
 
-####需求：创建一个每天凌晨0点执行的定时任务
+#### 需求：创建一个每天凌晨0点执行的定时任务
 
-####1.创建任务
+#### 1.创建任务
 
 ```java
 /**
@@ -41,7 +41,7 @@ public class MyTask {
 
 cron表示执行的条件，此处为每天凌晨0点执行
 
-####2.Application入口类
+#### 2.Application入口类
 ```java
 @SpringBootApplication
 @EnableAsync
