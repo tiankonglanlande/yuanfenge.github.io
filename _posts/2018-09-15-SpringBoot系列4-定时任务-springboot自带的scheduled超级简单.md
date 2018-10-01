@@ -65,7 +65,7 @@ public class Start {
     }
 
 ```
-[下载源码链接](https://github.com/tiankonglanlande/springboot)
+[源码下载链接](https://github.com/tiankonglanlande/springboot)
 
 如果大家使用的是springmvc可以参考我的另一篇文章
 定时删除项目upload目录下的所有不需要的文件以及目录（保留upload目录）
