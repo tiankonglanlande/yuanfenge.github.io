@@ -55,7 +55,21 @@ public class Start {
 
 @EnableAsync 开启并行执行（异步的），如果想串行执行无需开启
 
+#### 3.扩展
+此外我们还可以这样实现定时任务
+例如我们想5秒执行一次任务，代码如下
+``` java
+    @Scheduled(fixedDelay = 5000)
+    public void towTask(){
+        System.out.println("5秒后执行定时任务1");
+    }
 
+```
+[下载源码链接](https://github.com/tiankonglanlande/springboot)
+
+如果大家使用的是springmvc可以参考我的另一篇文章
+定时删除项目upload目录下的所有不需要的文件以及目录（保留upload目录）
+https://blog.csdn.net/u013042707/article/details/76034072
 版权所有，欢迎保留原文链接进行转载：)
 关注我们的公众号了解更多<br>
 <img src="{{ site.assets }}/images/gongzonghao/天空唯美.jpg"/>
