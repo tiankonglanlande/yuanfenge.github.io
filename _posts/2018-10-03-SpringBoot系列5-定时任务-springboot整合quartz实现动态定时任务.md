@@ -3,7 +3,7 @@ layout: post
 title: SpringBoot系列5-定时任务-springboot整合quartz实现动态定时任务
 tags:
 - spring-boot
-
+- quartz
 
 categories: spring-boot
 description:  SpringBoot系列5-定时任务-springboot整合quartz实现动态定时任务
