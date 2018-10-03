@@ -66,6 +66,7 @@ public class Start {
 
 ```
 #### 4.项目经验温馨提醒
+
 我们在创建spring的定时任务需要遵循这些规则否则定时任务不会生效
 
 1.类需要使用@Component注解
