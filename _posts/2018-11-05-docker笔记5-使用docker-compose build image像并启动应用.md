@@ -8,7 +8,7 @@ tags:
 categories: docker
 description:  实现一个将springboot打好的jar，使用docker-compose build image像并启动它
 ---
-使用docker-compose build image像并启动应用
+实现一个将springboot打好的jar，使用docker-compose build image像并启动它
 <!-- more -->
 
 使用docker-compose build image像并启动应用
@@ -21,9 +21,9 @@ FROM java:8-jre-alpine
 MAINTAINER test@xx.com
 ENV JAVA_OPTS null
 WORKDIR /home/portal/website
-ADD /home/portal/website/website-2.0.2.jar /home/portal/website/
+ADD /home/portal/website/website-1.0.0.jar /home/portal/website/
 EXPOSE 8081
-ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar website-2.0.2.jar" ]
+ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar website-1.0.0.jar" ]
 VOLUME /home/portal/website:/home/portal/website
 
 ```
@@ -37,7 +37,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: website:2.0.2
+    image: website:1.0.0
     container_name: website
     restart: always
     networks:
