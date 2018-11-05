@@ -6,7 +6,7 @@ tags:
 
 
 categories: docker
-description:  docker笔记5-使用docker-compose build image像并启动应用
+description:  实现一个将springboot打好的jar，使用docker-compose build image像并启动它
 ---
 使用docker-compose build image像并启动应用
 <!-- more -->
