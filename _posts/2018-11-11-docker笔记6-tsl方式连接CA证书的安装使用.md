@@ -125,9 +125,11 @@ ExecStart=/usr/bin/dockerd -H unix:///var/run/docker.sock -H tcp://0.0.0.0:2376
 ```
 
 #### 执行
+```
 systemctl daemon-reload
 systemctl restart docker.service
 
+```
 #### 将3个pem证书放置到客户端(eg:C:\Users\docker-ca)
 
 下载ca.pem ,cert.pem ,key.pem复制到客户端C:\Users\docker-ca（路径自定义）
