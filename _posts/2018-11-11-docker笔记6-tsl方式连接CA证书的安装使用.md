@@ -116,7 +116,7 @@ echo "curl --cacert ~/.docker/ca-$CODE.pem --cert ~/.docker/cert-$CODE.pem --key
 echo -e "\e[1;32mAll be done.\e[0m"
 
 ```
-执行
+执行命令
 ```
 ./auto-tls-certs.sh 
 ```
