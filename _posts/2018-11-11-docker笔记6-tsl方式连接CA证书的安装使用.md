@@ -1,6 +1,6 @@
 ---
 layout: post
-title: docker笔记6-docker笔记6-tsl方式连接CA证书的安装使用
+title: docker笔记6-使用tsl方式连接docker和CA证书的安装使用
 tags:
 - docker 
 
