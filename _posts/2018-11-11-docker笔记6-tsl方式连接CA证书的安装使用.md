@@ -132,8 +132,10 @@ systemctl restart docker.service
 
 下载ca.pem ,cert.pem ,key.pem复制到客户端C:\Users\docker-ca（路径自定义）
 #### 复制客户端的证书位置（eg:C:\Users\docker-ca）
+如果idea 安装了docker插件配置如图
 <img src="{{ site.assets }}/images/2018-11-11/201811111222.png"/>
-#### 配置docker-maven-plugin的证书位置
+
+如果使用的docker-maven-plugin配置证书位置
 <dockerCertPath>C:\Users\docker-ca</dockerCertPath>
 
 作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">天空蓝蓝的</a> <br>
