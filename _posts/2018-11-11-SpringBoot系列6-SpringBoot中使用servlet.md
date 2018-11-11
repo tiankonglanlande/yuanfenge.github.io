@@ -22,7 +22,7 @@ description:  在SpringBoot中使用servlet
 
 @WebServlet标记servlet，urlPatterns配置映射路径
 
-重新doGet方法
+重写doGet方法
 
 ```java
 @WebServlet(urlPatterns = "/my/servlet")
