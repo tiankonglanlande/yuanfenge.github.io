@@ -15,7 +15,7 @@ description:  在SpringBoot中使用servlet
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
-</dependency>
+</dependency> 
 ```
 
 #### 定义类MyServlet继承HttpServlet
