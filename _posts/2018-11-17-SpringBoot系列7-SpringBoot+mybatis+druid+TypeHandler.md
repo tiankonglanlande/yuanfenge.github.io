@@ -11,8 +11,9 @@ description:  SpringBoot系列7-SpringBoot+mybatis+druid+TypeHandler
  介绍在SpringBoot中集成mybatis和druid以及自定义TypeHandler
 <!-- more -->
 ### 创建数据库表
-```sql
+### 创建数据库表
 
+```sql
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -125,7 +126,7 @@ public class MybatisDruidApplication {
 ```
 说明：@MapperScan扫描注入指定的包名下Mapper接口注入容器
 
-#### 编写数据库表对应的Studeng实体类
+#### 编写数据库表对应的Student实体类
 ```java
 /**
  * 学生实体类
@@ -216,7 +217,7 @@ public class StudentController {
 ]
 
 ```
-### 使用纯注解方式
+###  使用纯注解方式
 #### StudentDao添加方法selectStudentListByAnnotation
 ```java
     @Select("SELECT * FROM student")
