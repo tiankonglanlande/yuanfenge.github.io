@@ -10,7 +10,7 @@ description:  SpringBoot系列7-SpringBoot+mybatis+druid+TypeHandler
 ---
  介绍在SpringBoot中集成mybatis和druid以及自定义TypeHandler
 <!-- more -->
-### 创建数据库表
+
 ### 创建数据库表
 
 ```sql
