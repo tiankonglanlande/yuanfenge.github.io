@@ -3,9 +3,10 @@ layout: post
 title: SpringBoot系列7-SpringBoot+mybatis+druid+TypeHandler
 tags:
 - spring-boot
-- servlet
+- druid
+- TypeHandler
 
-categories: spring-boot,druid,TypeHandler
+categories: spring-boot
 description:  SpringBoot系列7-SpringBoot+mybatis+druid+TypeHandler
 ---
  介绍在SpringBoot中集成mybatis和druid以及自定义TypeHandler
