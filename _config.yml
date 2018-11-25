@@ -132,7 +132,7 @@ google_analytics:
 baidu_tongji:
   enable: true
  ## sitecode: ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
-  sitecode: 82c06f010648df9243c6565698aa34d6
+  sitecode: b6c108ee6cee6afb7a7e41620b03de67
 cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id
