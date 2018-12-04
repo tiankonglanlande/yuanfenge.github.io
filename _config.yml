@@ -126,7 +126,6 @@ google_analytics:
   enable: false
   id:        ## e.g. UA-46321946-2 your google analytics ID.
   site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
-      production_url: http://www.lskyf.xyz/
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
@@ -161,3 +160,7 @@ baidu_search:     ## http://zn.baidu.com/
 tinysou_search:     ## http://tinysou.com/
   enable: false
   id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
+
+
+ site:
+     production_url: http://www.lskyf.xyz/
