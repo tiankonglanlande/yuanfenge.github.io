@@ -3,7 +3,10 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+
+# 修改 start
 highlighter: rouge
+# 修改 end
 
 assets: /assets
 baseurl: 
