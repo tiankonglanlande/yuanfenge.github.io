@@ -11,7 +11,7 @@ description:
  介绍如何自定义一个stater将jasypt封装为一个stater供多个项目使用，同时运行时动态传入加密密码
 <!-- more -->
 
-## 新建springboot-encryption-configuration项目实现stater
+#### 新建springboot-encryption-configuration项目实现stater
 
 #### pom文件引入jasypt
 ```xml
@@ -69,7 +69,7 @@ public class SupportConfiguration {
 #### 将上面项目安装到maven库
 我这里是使用的idea工具选择Maven Project-->springboot-encryption-configuration --> clean --> 然后compile --> 最后install
 
-## 新建springboot-encryption-configuration-demo测试stater
+#### 新建springboot-encryption-configuration-demo测试stater
 
 #### pom文件引入stater依赖
 ```xml
