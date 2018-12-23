@@ -114,7 +114,7 @@ idea选择 Edit Configurations--> JUnit -->选择 DemoApplicationTests.contextLo
 
 [源码下载链接](https://github.com/tiankonglanlande/springboot)
 
-[使用参考说明见: http://www.lskyf.com/view/30](http://www.lskyf.com/view/30)
+[原文链接: http://www.lskyf.com/view/30](http://www.lskyf.com/view/30)
 
 作者：天空蓝蓝的，版权所有，欢迎保留原文链接进行转载：)
 
