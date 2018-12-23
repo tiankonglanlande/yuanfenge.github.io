@@ -3,8 +3,7 @@ layout: post
 title: SpringBoot系列8-使用jasypt加密配置文件内容简单版
 tags:
 - spring-boot
-- druid
-- TypeHandler
+- jasypt
 
 categories: spring-boot
 description: 
