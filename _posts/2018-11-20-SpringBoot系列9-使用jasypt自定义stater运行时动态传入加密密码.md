@@ -40,7 +40,7 @@ jasypt.encryptor.password=${PWD}
 ```
 说明：接收运行时传入的解密密码
 
-#### 在resources/support/下根据不同环境配置文件，此处我的开发和测试环境加密内容一样。请你根据你的情况配置
+#### 在resources/support/下根据不同环境配置文件，此处我的开发和测试环境application-${spring.profiles.active}.properties文件的加密内容一样。请你根据你的情况来配置
 application-dev.properties和application-test.properties
 ```
 u.username=ENC(uF42uO9PxXDQYtnYe5++ebszGCkWXdY1NynJ+5Lptsg=)
