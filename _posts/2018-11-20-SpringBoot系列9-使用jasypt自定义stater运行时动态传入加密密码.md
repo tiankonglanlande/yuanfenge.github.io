@@ -8,7 +8,8 @@ tags:
 categories: spring-boot
 description: 
 ---
- 介绍如何自定义一个stater将jasypt封装为一个stater供多个项目使用，同时运行时动态传入加密密码
+ 
+  介绍如何自定义一个stater将jasypt封装为一个stater供多个项目使用，同时运行时动态传入加密密码
 <!-- more -->
 
 #### 新建springboot-encryption-configuration项目实现stater
