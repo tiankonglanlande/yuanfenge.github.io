@@ -61,7 +61,7 @@ public class MyJob implements Job {
 #### 定义QuartzManager管理我们的定时任务方法
 ```java
 **
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @Configuration
 public class QuartzManager {
@@ -193,7 +193,7 @@ public class QuartzManager {
 #### 定义ApplicationStartQuartzJobListener实现当应用启动,或刷新时，启动我们的定时任务
 ```java
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @Slf4j
 @Configuration
@@ -227,7 +227,7 @@ public class ApplicationStartQuartzJobListener implements ApplicationListener<Co
 ```java
 
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @Component
 public class MyJobFactory extends AdaptableJobFactory{
@@ -249,7 +249,7 @@ public class MyJobFactory extends AdaptableJobFactory{
 ```java
 
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @Configuration
@@ -279,7 +279,7 @@ public class Start {
 #### 定义ModifyCronController动态修改定时任务
 ```java
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @RestController
 public class ModifyCronController {
@@ -302,6 +302,6 @@ public class ModifyCronController {
 [源码下载链接](https://github.com/tiankonglanlande/springboot)
 
 
-作者：天空蓝蓝的，版权所有，欢迎保留原文链接进行转载：)
+作者：猿份哥，版权所有，欢迎保留原文链接进行转载：)
 关注我们的公众号了解更多<br>
 <img src="{{ site.assets }}/images/gongzonghao/天空唯美.jpg"/>

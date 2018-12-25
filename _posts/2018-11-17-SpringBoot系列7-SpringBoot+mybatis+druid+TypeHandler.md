@@ -602,5 +602,5 @@ public class JsonListTypeHandler<T> extends BaseTypeHandler<List<T>> {
 
 [源码下载链接](https://github.com/tiankonglanlande/springboot)
 
-作者：天空蓝蓝的，版权所有，欢迎保留原文链接进行转载：)
+作者：猿份哥，版权所有，欢迎保留原文链接进行转载：)
 

@@ -28,7 +28,7 @@ redcarpet:
     
 
 title : LuQiumMing
-tagline: 天空蓝蓝的欢迎您，你可以什么都不留下，但是请带走你需要的知识！
+tagline: 猿份哥欢迎您，你可以什么都不留下，但是请带走你需要的知识！
 
 defaults:
   -
@@ -82,8 +82,8 @@ mathjax: false      #enable mathjax if true
 
 #### Author information
 author:
-  name: 天空蓝蓝的 LuQiuMing 卢秋明      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm 天空蓝蓝的 LuQiuMing."    ## your introduction on the bottom of the page
+  name: 猿份哥 LuQiuMing 卢秋明      ## e.g. wuchong Author name
+  intro_line1:  "Hello ,I'm 猿份哥 LuQiuMing."    ## your introduction on the bottom of the page
   intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
  ## weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
  ## weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.

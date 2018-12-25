@@ -60,7 +60,7 @@ public class ServletApplication {
 
 ```java
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @WebServlet(urlPatterns = "/my/ayncservlet",asyncSupported = true)
 public class MyAyncServlet extends HttpServlet {
@@ -101,5 +101,5 @@ public class MyAyncServlet extends HttpServlet {
 
 [源码下载链接](https://github.com/tiankonglanlande/springboot)
 
-作者：天空蓝蓝的，版权所有，欢迎保留原文链接进行转载：)
+作者：猿份哥，版权所有，欢迎保留原文链接进行转载：)
 关注我们的公众号了解更多<br>

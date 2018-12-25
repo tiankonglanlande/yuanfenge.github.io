@@ -17,7 +17,7 @@ description:  SpringBoot系列4-定时任务-springboot自带的scheduled超级�
 
 ```java
 /**
- * @author 天空蓝蓝的
+ * @author 猿份哥
  */
 @Slf4j
 @EnableScheduling
