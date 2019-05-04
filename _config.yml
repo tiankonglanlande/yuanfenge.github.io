@@ -53,10 +53,13 @@ menu:
 #### Widgets
 widgets:
 - links
+- rss
 - category
 - tag
 - douban
+- links
 - rss
+
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
 
 
