@@ -15,11 +15,11 @@ docker笔记记录，使用的时候查一查。
 
 #### 1.卸载老版本的docker及相关依赖 #### 
 ```
-yum remove docker docker-common container-selinux docker-selinux docker-engine
+yum remove docker docker-cilent docker-cilent-latest  docker-common  docker-latest   docker-common-logrotate container-selinux docker-selinux docker-engine
 ```
 #### 2.安装yum-utils，它提供了yum-config-manager,可用来管理yum源 #### 
 ```
-yum install -y yum-utils
+yum install -y yum-utils   device-mapper-persistent-data lvm2
 ```
 ####  3.添加yum源 ####  
 ```
@@ -31,7 +31,7 @@ yum makecache fast
 ```
 #### 5.安装docker-ce #### 
 ```
-yum install docker-ce
+yum install -y docker-ce docker-ce-di containerd.io
 ```
 #### 6.启动docker #### 
 ```
@@ -42,7 +42,25 @@ systemctl start docker
 docker info
 docker --version
 ```
+#### 配置阿里云镜像加快速度镜像拉取https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors链接中可以看到。
+```
+mkdir -p /etc/docker
+```
 
+```
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://1iat0xok.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+#### 配置docker开机启动
+```
+systemctl enable docker
+```
 <br/>
 <br/>
 
