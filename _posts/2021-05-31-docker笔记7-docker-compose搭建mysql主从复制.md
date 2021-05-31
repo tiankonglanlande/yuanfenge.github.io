@@ -1,5 +1,20 @@
-##1.配置docker-compose
-### 1.1.上传主docker-compose.yml注意:复制的时候去掉注释和中文，主要配置server-id=1，read-only=0，端口号为3306
+---
+layout: post
+title: docker笔记7-使用docker-compose快速部署mysql主从复制
+tags:
+- docker 
+
+
+categories: docker
+description:  使用docker-compose快速部署mysql主从复制
+---
+
+使用docker-compose快速部署mysql主从复制
+
+<!-- more -->
+
+## 1.配置docker-compose
+### 1.1.主机（master）docker-compose.yml【注意:复制的时候去掉注释和中文】，主要配置server-id=1，read-only=0，端口号为3306
 docker-compose.yml
 ```yaml
 version: '3.1'
