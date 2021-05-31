@@ -1,0 +1,172 @@
+---
+layout: post
+title: docker笔记7-使用docker-compose快速部署mysql主从复制
+tags:
+- docker 
+- mysql
+- 主从复制
+- docker-compose
+
+
+categories: docker
+description:  使用docker-compose快速部署mysql主从复制
+---
+使用docker-compose快速部署mysql主从复制
+<!-- more -->
+## 1.配置docker-compose
+### 1.1.主机（master）docker-compose.yml【注意:复制的时候去掉注释和中文】，主要配置server-id=1，read-only=0，端口号为3306
+docker-compose.yml
+```yaml
+version: '3.1'
+services:
+  db:
+    image: mysql
+    container_name: master
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root  #root用户密码
+      TZ: Asia/Shanghai
+    command:
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+      --lower_case_table_names=1
+      --log-bin=mysql-bin #开启日志
+      --sync_binlog=1
+      --server-id=1  #指定ID
+      --read-only=0  #master的read-only=0，slave的read-only=1
+      --binlog-ignore-db=sys #要忽略的数据库
+      --binlog-ignore-db=mysql
+      --binlog-ignore-db=sys 
+      --binlog-ignore-db=performation_schema 
+      --binlog-do-db=yaunfenge_db1 #要同步的数据库
+      --binlog-do-db=yaunfenge_db2 #要同步的数据库
+    ports:
+      - 3306:3306 
+    volumes:
+      - ./data:/var/lib/mysql
+      - ./conf/my.cnf:/etc/my.cnf
+      - ./log:/var/log/mysql
+```
+
+### 1.2.从机(slave)docker-compose.yml【注意:复制的时候去掉注释和中文】，配置server-id=2，read-only=1 （这里是和master的区别），端口号为3309
+
+```yaml
+version: '3.1'
+services:
+  db:
+    image: mysql
+    container_name: slave01
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      TZ: Asia/Shanghai
+    command:
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+      --lower_case_table_names=1
+      --log-bin=mysql-bin 
+      --sync_binlog=1
+      --server-id=2 
+      --read-only=1 
+      --binlog-ignore-db=sys
+      --binlog-ignore-db=mysql
+      --binlog-ignore-db=sys 
+      --binlog-ignore-db=performation_schema 
+      --binlog-do-db=yaunfenge_db1
+    ports:
+      - 3309:3306 
+    volumes:
+      - ./data:/var/lib/mysql
+      - ./conf/my.cnf:/etc/my.cnf
+      - ./log:/var/log/mysql
+```
+	  
+### 1.3.在docker-compose.yml执行docker-compose up -d 启动
+
+
+## 2.加入集群
+### 2.1 主机创建同步用户并授权
+
+```bash
+#通过Navicat中创建用户并授权
+CREATE USER 'backup'@'%' IDENTIFIED BY '123456';
+GRANT REPLICATION SLAVE ON *.* TO 'backup'@'%';
+FLUSH PRIVILEGES;
+#查看master的binlog信息
+SHOW MASTER STATUS ;
+得到 File mysql-bin.000003下面用到
+```
+### 2.2 从机slave01加入集群
+
+从机slave01,slave0,slave.....n...也是类似这里只列举一个
+启动slave容器，实现主从同步
+#### 2.2.1 启动容器,等待mysql正常启动
+
+#### 2.2.2 通过Navicat连接slave执行下面命令配置  MASTER_HOST , MASTER_USER , MASTER_LOG_FILE , MASTER_PORT
+```bash
+CHANGE MASTER TO MASTER_HOST='192.168.56.120',MASTER_USER='backup',MASTER_PASSWORD='123456',MASTER_LOG_FILE='mysql-bin.000003',MASTER_LOG_POS=0,MASTER_PORT=3306;
+```
+
+#### 2.2.3 开启同步
+```bash
+START SLAVE;
+```
+#### 2.2.4 查看slave同步状态
+```sh
+SHOW SLAVE STATUS 
+```
+
+如果 Slave_IO_Running 是Yes并且Slave_Sql_Running 那么就成功了
+
+### 2.3 其他注意事项
+#### 2.3.1 如果Slave需要修改先或有什么问题先执行
+```
+STOP SLAVE;
+RESET SLAVE; 
+```
+
+再执行以下代码重新加入
+```bash
+CHANGE MASTER TO MASTER_HOST='192.168.56.120',MASTER_USER='backup',MASTER_PASSWORD='123456',MASTER_LOG_FILE='mysql-bin.000003',MASTER_LOG_POS=0,MASTER_PORT=3306;
+
+START SLAVE;
+
+SHOW SLAVE STATUS;
+```
+
+#### 2.3.2 如果master需要修改或有什么问题先执行 RESET MASTER在进行其他步骤;
+#### 2.3.3 如果Slave_IO_Running一直是collecting首先应该试试是否能在slave服务器ping通master的ip;
+
+##### 其他别人的整理原因：
+```bash
+1.网络不通
+2.账户密码错误
+3.防火墙
+4.mysql配置文件问题
+5.连接服务器时语法
+6.主服务器mysql权限
+建议以上的原因一个个按顺序逐一排除
+```
+## 3.测试
+### 插入测试sql语句执行后查看SLAVE已正常同步数据则搭建完成
+```sql
+ create DATABASE db_yuanfenge;
+ CREATE TABLE `tbl_student` (
+  `id` int NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ;
+INSERT INTO `db_yuanfenge`.`tbl_programmer`(`id`, `name`) VALUES (1, '猿份哥');
+```
+
+
+
+作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">猿份哥</a> <br>
+网址导航：<a href="http://www.lskyf.com" target="_blank">https://www.lskyf.com</a> <br>
+个人博客：<a href="yuanfenge.lskyf.com" target="_blank">http://yuanfenge.lskyf.com</a> <br>
+版权所有，欢迎保留原文链接进行转载：)
+

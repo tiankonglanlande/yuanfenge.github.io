@@ -66,7 +66,7 @@ systemctl enable docker
 
 作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<a href="#">猿份哥</a> <br>
 网址导航：<a href="http://www.lskyf.com" target="_blank">http://www.lskyf.com</a> <br>
-个人博客：<a href="http://www.lskyf.xyz" target="_blank">http://www.lskyf.xyz</a> <br>
+个人博客：<a href="yuanfenge.lskyf.com" target="_blank">yuanfenge.lskyf.com</a> <br>
 版权所有，欢迎保留原文链接进行转载：)
 还可以关注我们的公众号<br>
 <img src="{{ site.assets }}/images/gongzonghao/天空唯美.jpg"/>
